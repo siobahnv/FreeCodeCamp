@@ -12,13 +12,13 @@ H1 through H6 <br>
 
 ### Nesting (indentation 2 spaces)
 img tag has opening, but no closing tag <br>
-_void element:_ opening, but no closing tag <br>
+_void element:_ is a tag with an opening, but no closing tag <br>
 
 ## HTML Attributes
 Example _src_ inside _img_ tag <br>
 _alt_ attribute <br>
 ```
-<img src="URL">
+<img src="URL" alt="TEXT">
 ```
 Anchor "a" element <br>
 Text needs to be between the anchor elements; any text, image, or element can be turned into a link.
@@ -61,8 +61,9 @@ _strong_ element to add importance or strength (bold) <br>
 
 _form_ element to create a form to collect input <br>
 _action_ attribute is where the form data is to be sent <br>
-_input_ element is a _void_ element to collect data/input from a form<br>
+_input_ element is a _void_ element to collect data/input from a form; does not have a closing tag, value needs a leading space <br>
 _type_ attribute can be used to definte _input_ elements <br>
+_type_ attributes for different _inputs_ can include: text, radio (button), checkbox, etc. <br>
 _name_ attribute represents the data being submitted and can be assigned a value <br>
 _placeholder text_ can be used to give hints <br>
 _required_ attribute can be used to require certain input, does not require a set value, needs space around <br>
@@ -91,3 +92,51 @@ _value_ attribute distinguishes values between buttons/inputs. <br>
   <button type="VALUE">TEXT_EXAMPLE_SUBMIT</button>
 </form>
 ```
+
+_fieldset_ element groups related inputs and labels in a form <br>
+_block-level elements_ appear on a new line <br>
+_fieldset_ elements are _block-level elements_ <br>
+_legend_ element acts as a caption for the _fieldset_ element (Q for A) <br>
+
+```
+<form action="SUBMIT_URL">
+  <fieldset>
+    <legend>QUESTION</legend>
+    <label><input id="unique1" type="radio" name="Group1" value="option1"> Option 1</label>
+    <label><input id="unique2" type="radio" name="Group1" value="option2"> Option 2</label>
+  </fieldset>
+</form>
+```
+
+Use _type_ "checkbox" for inputs with multiple answers <br>
+Can use _for_ attribute with _label_ element and _id_ attribute to nest/associate an _input_ element's text <br>
+_name / value_ attribute pairs; _value_ is optional <br>
+_checked_ attribute can default a radio button or checkbox to selected/checkmarked; similar to _required_ attribute, needs spaces around, no value <br>
+
+```
+<form action="SUBMIT_URL">
+  <fieldset>
+    <legend>QUESTION</legend>
+    <label><input checked id="unique1" type="checkbox" name="Group1" value="option1"> Option 1</label>
+    <label><input id="unique2" type="checkbox" name="Group1" value="option2"> Option 2</label>
+
+    <input id="UNIQUE_VALUE" type="value" name="VALUE" value="UNIQUE_VALUE"> <label for="UNIQUE_VALUE"> TEXT </label>
+  </fieldset>
+</form>
+```
+
+_footer_ element typically contains info about author, terms, copyright, contact, etc. <br>
+all page content goes inside the _body_ element <br>
+other important information goes inside the _head_ element such as _metadata_ <br>
+_title_ element determines what browsers show in the title bar or tab for the page and goes inside the _head_ element <br>
+entire contents of a page are nested inside an _html_ element <br>
+_html_ element is the root of an HTML page and wraps all content <br>
+can specify the language of a page by adding _lang_ attribute to _html_ element <br>
+all pages should begin with _<!DOCTYPE html>_; this "special string is known as a declaration and ensures the browser tries to meet industry-wide specifications" <br>
+can define browser behavior by setting _meta_ elements inside the _head_ element <br>
+_meta_ elements are _void_ elements <br>
+
+```
+<meta attribute="value">
+```
+
