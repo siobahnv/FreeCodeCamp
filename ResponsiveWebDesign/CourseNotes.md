@@ -5,18 +5,19 @@ Elements <br>
 Opening and Closing <br>
 H1 through H6 <br>
 ```
+<h1>TEXT</h1>
 <p>Paragraph</p>
 <!-- Comment Note Tag -->
 <main>Main Content</main>
 ```
 
 ### Nesting (indentation 2 spaces)
-img tag has opening, but no closing tag <br>
+_img_ tag has opening, but no closing tag <br>
 _void element:_ is a tag with an opening, but no closing tag <br>
 
 ## HTML Attributes
 Example _src_ inside _img_ tag <br>
-_alt_ attribute <br>
+_alt_ attribute provides useful alternative text<br>
 ```
 <img src="URL" alt="TEXT">
 ```
