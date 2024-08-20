@@ -61,3 +61,10 @@ _block-level_ elements vs _inline_ elements <br>
 .class p { }
 ```
 ...some nonsense of positioning _p_ elements side by side with no space/break in code... <br>
+_padding_ properties <br>
+_max-width_ property is a nice touch <br>
+_fallback_ value <br>
+type selectors <br>
+_footer_ element <br>
+```<hr>```
+_hr element_ to display a divider <br>
