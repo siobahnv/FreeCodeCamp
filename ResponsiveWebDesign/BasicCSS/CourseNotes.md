@@ -68,3 +68,15 @@ type selectors <br>
 _footer_ element <br>
 ```<hr>```
 _hr element_ to display a divider <br>
+borders <br>
+pseudo-selector, example: 
+```
+a:visited { 
+  propertyName: propertyValue; 
+} 
+
+a:hover { 
+  propertyName: propertyValue; 
+}
+```
+negative values - <br>
