@@ -52,7 +52,33 @@ _Transition_ or _gradient_: "A gradient is when one color transitions into anoth
 ^^...what does this even mean? <br>
 ```
 linear-gradient(gradientDirection, color1, color2, ...);
+linear-gradient(gradientDirection, color1 0%, color2 50%, ...);
+```
+"_gradientDirection_ is the direction of the line used for the transition. _color1_ and _color2_ are color arguments, which are the colors that will be used in the transition itself. These can be any type of color, including color keywords, hex, _rgb_, or _hsl_." <br>
+"Color-stops allow you to fine-tune where colors are placed along the gradient line. They are a length unit like _px_ or percentages that follow a color in the _linear-gradient_ function." <br>
+If no color-stops are provided, will evenly space by default. <br>
+"If no _gradientDirection_ argument is provided to the _linear-gradient_ function, it arranges colors from top to bottom, or along a 180 degree line, by default." <br>
+
+"_Opacity_ describes how opaque, or non-transparent, something is." <br>
+"With the value 0, or 0%, the element will be completely transparent, and at 1.0, or 100%, the element will be completely opaque like it is by default." <br>
+"Another way to set the opacity for an element is with the _alpha channel_." <br>
+```
+rgba(redValue, greenValue, blueValue, alphaValue);
+#000000CC;
+hsla(hueValue, saturation%, lightness%, alphaValue);
 ```
 
 ### Back to general styling and topics
 function, values/arguments, actions <br>
+"This is because the default _display_ property for _div_ elements is _block_." <br>
+"All HTML elements have borders, though they're usually set to _none_ by default." <br>
+"For a border to be visible, you need to set its width and style." <br>
+"The _box-shadow_ property lets you apply one or more shadows around an element." <br>
+```
+box-shadow: offsetX offsetY color;
+box-shadow: offsetX offsetY blurRadius color;
+box-shadow: offsetX offsetY blurRadius spreadRadius color;
+```
+Bunch of info on values and effects. <br>
+blurRadius <br>
+spreadRadius <br>
